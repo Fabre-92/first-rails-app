@@ -1,0 +1,13 @@
+<div class="navbar">
+    <%= link_to root_path do %>
+      <%= image_tag "cool-logo.svg", class: "navbar-logo"%>
+    <% end %>
+    <div class="navbar-icons">
+      <%= link_to about_path do %>
+        <%= image_tag "icon-user.svg", class: "navbar-icon" %>
+      <% end %>
+      <%= link_to projects_path do %>
+        <%= image_tag "icon-briefcase.svg", class: "navbar-icon" %>
+      <% end %>
+    </div>
+</div>
