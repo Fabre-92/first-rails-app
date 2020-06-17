@@ -1,0 +1,108 @@
+.navbar{
+  padding: 64px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: fixed;
+  bottom: 0vh;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(0deg, #FAFAFA 32%, rgba(250, 250, 250, 0) 100%);
+  animation: hero-ease_out 1.2s ease-out;
+}
+
+.navbar-logo{
+  width: 140px;
+  margin-left: 1vw;
+}
+
+.navbar-icons{
+  display: flex;
+  margin-right: 15vw;
+}
+
+.navbar-icon{
+  height: 56px;
+  margin-left: 40px;
+}
+
+
+@keyframes navbar-animation{
+  0%{opacity: 0;};
+  30%{opacity: 0;};
+  100%{opacity: 1}
+}
+
+
+@media (min-width: 300px) and (max-width: 759.9px)  {
+  .navbar {
+    padding: 64px 48px;
+  }
+
+  .navbar-icons {
+    margin-right: 12vw;
+  }
+  .navbar-icon {
+    height: 48px;
+  }
+  .navbar-logo{
+  width: 120px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 1019.9px) {
+  .navbar {
+    padding: 48px;
+  }
+
+  .navbar-icons {
+    margin-right: 12vw;
+  }
+  .navbar-icon {
+    height: 44px;
+  }
+  .navbar-logo{
+  width: 120px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1279.9px) {
+  .navbar {
+    bottom: 89vh;
+    background: linear-gradient(180deg, #FAFAFA 32%, rgba(250, 250, 250, 0) 100%);
+  }
+
+ .navbar-icons {
+    margin-right: 12vw;
+  }
+  .navbar-icon {
+    height: 24px;
+    margin-left: 24px;
+  }
+  .navbar-logo{
+    width: 60px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    bottom: 86vh;
+    background: linear-gradient(180deg, #FAFAFA 32%, rgba(250, 250, 250, 0) 100%);
+  }
+
+  .navbar-logo{
+  width: 60px;
+  }
+
+ .navbar-icons {
+    margin-right: 12vw;
+  }
+  .navbar-icon {
+    height: 24px;
+    margin-left: 24px;
+  }
+
+}
+
