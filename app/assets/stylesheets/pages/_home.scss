@@ -173,6 +173,7 @@
   width: 80%;
   margin-left: auto;
   margin-top: -40px;
+
   p {
     margin-bottom: 24px;
   }
@@ -182,11 +183,23 @@
     font-weight: 400;
   }
   img{
+
     width: 22px;
     margin-bottom: -6px;
     margin-left: 2px;
   }
+
+  &:hover img {
+
+
+  }
+
+
 }
+
+
+
+
 
 .design-content__inv {
   width: 80%;
