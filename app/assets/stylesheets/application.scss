@@ -1,0 +1,50 @@
+/* Graphical variables */
+@import "config/fonts";
+@import "config/colors";
+@import "components/typography";
+@import "components/chevron_hero";
+@import "components/navbar";
+@import "components/footer";
+
+/* Pages */
+@import "pages/home";
+
+/* External libraries  */
+/*@import "font-awesome-sprockets";
+@import "font-awesome";*/
+
+body {
+  background: #FAFAFA;
+  margin: 0;
+  color: #444;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.container {
+  width: 340px;
+  margin: 32px auto;
+  font-family: Source Sans Pro;
+}
+
+
+@media (min-width: 760px) and (max-width: 1019.9px) {
+  .container {
+    width: 680px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1279.9px){
+ .container {
+    width: 940px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1120px;
+  }
+}
+
+
+
