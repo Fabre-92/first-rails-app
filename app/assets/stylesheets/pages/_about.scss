@@ -1,0 +1,104 @@
+.about-me__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 24vh;
+}
+
+.about-me__text {
+  h1 {
+    margin-bottom: 6vh;
+
+  }
+
+  p {
+    line-height: 160%;
+
+  }
+}
+
+.about-me__img {
+  img {
+    margin-top: 6vh;
+    opacity: .6;
+  }
+}
+
+.about-me__contact {
+  margin: 4vh auto;
+  background-color: rgba(134, 203, 146, 0.4);
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 6px;
+  text-align: center;
+
+  p {
+    margin-bottom: 2vh;
+  }
+}
+
+.contact-phone {
+  margin-top: 32px;
+}
+
+.about-social{
+  margin: 32px;
+  a {
+    margin: 16px 16px 16px 0;
+    font-size: 22px;
+    text-decoration: none;
+  }
+}
+
+
+@media (min-width: 1020px) and (max-width: 1279.9px) {
+  .about-me__text {
+    width: 60%;
+    margin-left: 6vh;
+  }
+  .about-me__img {
+    width: 60%;
+    margin-left: auto;
+    margin-top: -12vh;
+    opacity: .6;
+  }
+
+  .about-me__contact {
+    width: 60%;
+    margin: 8vh auto;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .about-me__text {
+    width: 60%;
+    margin-left: 6vh;
+  }
+  .about-me__img {
+    width: 60%;
+    margin-left: auto;
+    margin-top: -16vh;
+    opacity: .6;
+  }
+
+  .about-me__contact {
+    width: 60%;
+    margin: 8vh auto;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

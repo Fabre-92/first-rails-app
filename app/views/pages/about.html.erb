@@ -1,1 +1,38 @@
-about.html.erb
+<div class="container">
+  <div class="about-me__container">
+    <div class="about-me__text">
+      <div class="home-projects__title">
+        <%= image_tag 'icon-user-b.svg' %>
+        <h2>this is me</h2>
+      </div>
+      <p>I’m fabre martínez: </p>
+      <p>young graphic and UI designer (UX lover) and front-end developer who wants to build a career in London, live in this amazing city, and play rugby as well as he can.</p>
+      <p>if you wan’t to know why a publicity and public relationships graduate with a Masters in graphic design and creativity and a course of photography and illumination wants to progress his career in the world of web design, just contact me.</p>
+    </div>
+    <div class="about-me__img">
+        <%= image_tag 'illustration-me.svg' %>
+    </div>
+  </div>
+  <div class="about-me__contact">
+    <p>contact me on</p>
+    <h4>afabregat92@gmail.com</h4>
+    <h4 class="contact-phone">+44 7394 018363</h4>
+    <div class="about-social">
+      <%= link_to "https://www.linkedin.com/in/fabre-mart%C3%ADnez-61682a16a/", target: '_blank' do %>
+        <%= image_tag "RRSS-linkedin.svg", class: "footer-rrss__icon" %>
+      <% end %>
+      <%= link_to "https://github.com/Fabre-92", target: '_blank'  do %>
+        <%= image_tag "RRSS-github.svg", class: "footer-rrss__icon" %>
+      <% end %>
+      <%= link_to "https://dribbble.com/fabre_92", target: '_blank' do %>
+        <%= image_tag "RRSS-dribbble.svg", class: "footer-rrss__icon" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="about-me__tabs">
+
+
+  </div>
+</div>
+
