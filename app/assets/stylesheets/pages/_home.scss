@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 32vh;
+  margin-top: 42vh;
 }
 
 .animation-ease-out {
-  margin-bottom: 16vh;
+  margin-bottom: 36vh;
   animation: hero-ease_out .8s ease-out;
   max-width: 800px;
 }
@@ -177,28 +177,21 @@
   p {
     margin-bottom: 24px;
   }
+
   a {
     font-size: 21px;
     color: #555;
     font-weight: 400;
   }
-  img{
 
-    width: 22px;
-    margin-bottom: -6px;
-    margin-left: 2px;
+  img {
+    width: 20px;
+    margin-bottom: -4px;
   }
 
-  &:hover img {
-
-
-  }
 
 
 }
-
-
-
 
 
 .design-content__inv {
@@ -221,13 +214,156 @@
 
 
 
+/*--------------------------------------------
+----------------- me container ---------------
+---------------------------------------------*/
 
 
+.home-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
 
 
+.home-me__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me__text {
+  p {
+    margin-bottom: 2vh;
+  }
+}
+
+.about-me__img-home {
+  opacity: .4;
+  width: 50%;
+  margin-left: auto;
+  margin-top: -2vh;
+}
+
+.chevron-link {
+  font-size: 21px;
+  color: #555;
+  font-weight: 400;
+  transition: .3s ease-out;
+
+  .icon-chevron-stroke-right {
+    fill: #555;
+    stroke: #555;
+  }
+
+  .icon-chevron-stroke-right__vp {
+    width: 16px;
+    margin-bottom: -4px;
+  }
+
+  &:hover {
+    color: #86CB92;
+
+    .icon-chevron-stroke-right {
+      fill: #86CB92;
+      stroke: #86CB92;
+    }
+  }
+
+  &:active {
+    color: #7BDFF2;
+    .icon-chevron-stroke-right {
+      fill: #7BDFF2;
+      stroke: #7BDFF2;
+    }
+  }
+
+}
+
+.about-me__container-home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 16vh;
+}
 
 
+/*--------------------------------------------
+---------------- work container --------------
+---------------------------------------------*/
+.home-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8vh;
+}
 
+.home-section__title {
+  display: flex;
+  align-items: center;
+  margin: 4vh 0;
+
+  h2 {
+    margin-left: -40px;
+  }
+
+  img {
+    width: 80px;
+  }
+}
+
+.home-section__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+  grid-gap: 48px;
+  display: flex;
+  align-items: stretch;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.work-card__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 24px auto -64px auto;
+  z-index: 10;
+  width: 180px;
+  height: 120px;
+
+}
+
+.work-card__text {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 64px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 300px;
+  box-sizing: content-box;
+}
+
+.work-card__title {
+  margin-bottom: 1vh;
+}
+
+.secundary-text {
+  margin-top: .4vh;
+  color: #86CB92;
+}
+
+/*--------------------------------------------
+------------- queries container --------------
+---------------------------------------------*/
 
 
 
@@ -240,8 +376,7 @@
 
 @media (max-width: 759.9px) {
   .animation-ease-out{
-    margin-bottom: 16vh;
-
+    margin-bottom: 36vh;
   }
 }
 
@@ -250,14 +385,15 @@
     margin-top: 36vh;
   }
   .animation-ease-out{
-    margin-bottom: 12vh;
+    margin-bottom: 24vh;
     width: 740px;
   }
 
   .project-image {
-  width: 320px;
-  margin: 40px auto 0 auto;
+    width: 320px;
+    margin: 40px auto 0 auto;
   }
+
 
 }
 
@@ -282,6 +418,16 @@
     width: 60%;
     margin-left: 20%;
   }
+  .about-me__img-home {
+    margin-top: -24vh;
+    z-index: -10;
+  }
+
+  .home-section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
 }
 
@@ -291,7 +437,7 @@
   }
   .animation-ease-out{
     margin-left: 1vw;
-    margin-bottom: 14vh;
+    margin-bottom: 36vh;
   }
   .header_img {
     width: 60%;
@@ -307,6 +453,18 @@
     width: 60%;
     margin-left: 20%;
   }
+  .about-me__img-home {
+    margin-top: -24vh;
+    z-index: -10;
+  }
+
+  .home-section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
 }
 
 

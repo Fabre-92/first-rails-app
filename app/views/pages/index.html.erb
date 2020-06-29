@@ -5,10 +5,6 @@
         young visual designer and front-end developer who loves details, weird things and, obviously, his mustache
       </h1>
     </div>
-    <div class="chevron-hero">
-      <%= image_tag 'chevron-down-hero.svg' %>
-      <p>I designed for</p>
-    </div>
   </div>
   <div class="home-projects">
     <div class="home-projects__title">
@@ -94,7 +90,9 @@
         </div>
         <div class="design-content">
           <p>the <strong>winner</strong> 🏆 of the <strong>logotype contest</strong> of the first edition of the CAFD meeting “El futuro en movimiento” (future in motion) for the University Miguel Hernandez (Elche, Spain).</p>
-          <a href="#"> go to project <%= image_tag 'icon-chevron-stroke-right.svg' %> </a>
+          <%= link_to root_path, class: "chevron-link" do %>
+            go to project <%= render 'shared/icon-chevron-stroke-right' %>
+          <% end %>
         </div>
       </div>
       <div class="design-project">
@@ -104,7 +102,9 @@
         </div>
         <div class="design-content__inv">
           <p>a collaboration between <strong>rolser</strong> and ecovidrio. that design wants to reflect the form of the bottles waiting in the floor to be recycled.</p>
-          <a href="#"> go to project <%= image_tag 'icon-chevron-stroke-right.svg' %> </a>
+          <%= link_to root_path, class: "chevron-link" do %>
+            go to project <%= render 'shared/icon-chevron-stroke-right' %>
+          <% end %>
         </div>
       </div>
       <div class="design-project">
@@ -113,12 +113,100 @@
           <%= image_tag 'home-design-NICEBALLS.png' %>
         </div>
         <div class="design-content">
-          <p><strong>restyling</strong> of the <strong>packaging</strong> for the new 70% dark edition of <strong>Nice Balls.</strong> the new packaging had to have the same shape as the previous one, in this case, the design team only could make a single ink print.</p>
-          <a href="#"> go to project <%= image_tag 'icon-chevron-stroke-right.svg' %> </a>
+          <p><strong>restyling</strong> of the <strong>packaging</strong> for the new 70% dark edition of <strong>Nice Balls.</strong> the new packaging had to have the same shape as the previous one, in this case, the design team only could make a single ink print. </p>
+          <%= link_to root_path, class: "chevron-link" do %>
+            go to project <%= render 'shared/icon-chevron-stroke-right' %>
+          <% end %>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-me">
+    <div class="about-me__container-home">
+      <div class="about-me__text">
+        <div class="home-projects__title">
+          <%= image_tag 'icon-user-b.svg' %>
+          <h2>about me</h2>
+        </div>
+        <div class="section-text_content">
+          <p>hello!</p>
+          <p class="contact-phone"> I’m <strong>fabre</strong> (Alejandro Fabregat), and also I’m a <strong>graphic designer</strong> specialized in graphic & <strong>UI/UX design</strong> and <strong>front-end development</strong>, based in London. </p>
+          <%= link_to about_path, class: "chevron-link" do %>
+            know more about me <%= render 'shared/icon-chevron-stroke-right' %>
+          <% end %>
+        </div>
+      </div>
+      <div class="about-me__img-home ">
+          <%= image_tag 'illustration-me.svg' %>
+      </div>
+    </div>
+  </div>
+  <div class="home-section" >
+    <div class="home-section__title">
+      <%= image_tag 'icon-briefcase-b.svg' %>
+      <h2>lasts jobs</h2>
+    </div>
+    <div class="home-section__container">
+      <div class="work-card">
+        <%= image_tag 'work-bit.svg', class: "work-card__image" %>
+        <div class="work-card__text">
+          <p class="work-card__title"><strong>BIT marketing</strong></p>
+          <p>marketing and web developer agency based in Alicante (Spain)</p>
+          <p class="secundary-text">graphic, UX and UI designer (junior & leader)</p>
+        </div>
+      </div>
+      <div class="work-card">
+        <%= image_tag 'work-imaginarte.svg', class: "work-card__image" %>
+        <div class="work-card__text">
+          <p class="work-card__title"><strong>imaginarte creative agency</strong></p>
+          <p>publicity and creativity agency based in Alicante (Spain) </p>
+          <p class="secundary-text" >creative and graphic designer (trainee)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div class="about-me__contact">
+      <p>contact me on</p>
+      <h4>afabregat92@gmail.com</h4>
+      <h4 class="contact-phone">+44 7394 018363</h4>
+      <div class="about-social">
+        <%= link_to "https://www.linkedin.com/in/fabre-mart%C3%ADnez-61682a16a/", target: '_blank' do %>
+          <%= image_tag "RRSS-linkedin.svg", class: "footer-rrss__icon" %>
+        <% end %>
+        <%= link_to "https://github.com/Fabre-92", target: '_blank'  do %>
+          <%= image_tag "RRSS-github.svg", class: "footer-rrss__icon" %>
+        <% end %>
+        <%= link_to "https://dribbble.com/fabre_92", target: '_blank' do %>
+          <%= image_tag "RRSS-dribbble.svg", class: "footer-rrss__icon" %>
+        <% end %>
       </div>
     </div>
   </div>
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
